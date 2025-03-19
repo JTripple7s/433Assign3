@@ -34,7 +34,7 @@ public:
     unsigned int burst_time;
     // The arrival time of the process
     unsigned int arrival_time;
-
+    
     /**
      * @brief Construct a new PCB object
      * @param id: each process has a unique ID
