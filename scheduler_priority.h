@@ -1,7 +1,7 @@
 /**
 * Assignment 3: CPU Scheduler
  * @file scheduler_priority.h
- * @author ??? (TODO: your name)
+ * @author Joel Buringame
  * @brief This Scheduler class implements the Priority scheduling algorithm.
  * @version 0.1
  */
@@ -13,10 +13,17 @@
 #define ASSIGN3_SCHEDULER_PRIORITY_H
 
 #include "scheduler.h"
+#include <queue>
+#include <algorithm>
 
 class SchedulerPriority : public Scheduler {
 private:
-    // TODO: add necessary member variables here for your implementation
+    std::vector<PCB> process_copy;
+    std::queue<PCB> ready_queue;
+    std::vector<unsigned int> turnaround_times;
+    std::vector<unsigned int> waiting_times;
+    unsigned int total_turnaround_time;
+    unsigned int total_waiting_time;  
 
 public:
     /**

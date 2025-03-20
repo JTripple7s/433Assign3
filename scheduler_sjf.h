@@ -12,10 +12,17 @@
 #define ASSIGN3_SCHEDULER_SJF_H
 
 #include "scheduler.h"
+#include <queue>
+#include <algorithm>
 
 class SchedulerSJF : public Scheduler {
 private:
-    // TODO: add necessary member variables here for your implementation
+    std::vector<PCB> process_copy;
+    std::queue<PCB> ready_queue;
+    std::vector<unsigned int> turnaround_times;
+    std::vector<unsigned int> waiting_times;
+    unsigned int total_turnaround_time;
+    unsigned int total_waiting_time;    
 
 public:
     /**

@@ -15,11 +15,12 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
     std::cout << "CS 433 Programming assignment 3" << std::endl;
-    std::cout << "Author: xxxxxx and xxxxxxx" << std::endl;     // TODO: add your name
-    std::cout << "Date: xx/xx/20xx" << std::endl;               // TODO: add date
+    std::cout << "Author: Joel Burlingame" << std::endl;     // TODO: add your name
+    std::cout << "Date: 3/19/2025" << std::endl;               // TODO: add date
     std::cout << "Course: CS433 (Operating Systems)" << std::endl;
     std::cout << "Description : test RR scheduling algorithm " << std::endl;
     std::cout << "=================================" << std::endl;
+    std::cout << "Running ./rr schedule.txt" << std::endl;
 
     // Make sure the user has provided the input file name
     if (argc < 3) {
