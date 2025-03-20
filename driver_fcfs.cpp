@@ -15,15 +15,16 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
     std::cout << "CS 433 Programming assignment 3" << std::endl;
-    std::cout << "Author: xxxxxx and xxxxxxx" << std::endl;     // TODO: add your name
-    std::cout << "Date: xx/xx/20xx" << std::endl;               // TODO: add date
+    std::cout << "Author: Joel Burlingame" << std::endl;     // TODO: add your name
+    std::cout << "Date: 3/19/2025" << std::endl;               // TODO: add date
     std::cout << "Course: CS433 (Operating Systems)" << std::endl;
     std::cout << "Description : test FCFS scheduling algorithm " << std::endl;
     std::cout << "=================================" << std::endl;
+    std::cout << "Running ./fcfs schedule.txt " << std::endl;
 
     // Make sure the user has provided the input file name
     if (argc < 2) {
-        cerr << "Usage: " << argv[0] << " <input_file>" << endl;
+        cerr << "Usage: " << argv[0] << " <input_file>" << std::endl;
         exit(1);
     }
 
@@ -31,7 +32,7 @@ int main(int argc, char *argv[]) {
     ifstream input_file(argv[1]);
     // Make sure the file is open
     if (!input_file.is_open()) {
-        cerr << "Error: Unable to open file " << argv[1] << endl;
+        cerr << "Error: Unable to open file " << argv[1] << std::endl;
         exit(1);
     }
     string line;
